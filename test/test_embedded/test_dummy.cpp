@@ -23,6 +23,7 @@ void test_calculator_addition(void) {
 void setup() {
     // wait until serial port has connected
     while(!Serial) {}
+    pinMode(LED_BUILTIN, OUTPUT);
     UNITY_BEGIN();
     RUN_TEST(test_calculator_addition);
     UNITY_END();
